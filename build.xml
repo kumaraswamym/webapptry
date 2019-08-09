@@ -17,7 +17,7 @@
 	  </tstamp>
 	<target name="delete" >
 		<delete dir="${web.dir}/WEB-INF/classes" />
-<delete dir="${war.dir}" />		
+                <delete dir="${war.dir}" />		
 	</target>
 	
 	<target name="init" >
@@ -41,7 +41,6 @@
 		<war basedir="${web.dir}" destfile="${war.dir}/webapp.war"/>
 		</target>
 
-	<!-- <target name="all" depends="delete,init,compile_project,package" /> -->
 	
 	<target name="all" >
 	  <antcall target="delete" />

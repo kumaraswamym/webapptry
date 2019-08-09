@@ -53,19 +53,7 @@
 	 <ant antfile="deploy.xml" target="deploy"/>
 	</target>
 	
-	<target name="check" >
-	  <condition property="check.war">
-	  	<available file="${war.dir}" type="dir" />
-	  </condition>
-	 <antcall target="waravailable" />
-		<antcall target="warnotavailable" />
-	</target>
-	<target name="waravailable" if="check.war">
-	 <delete dir="${war.dir}" />
-	</target>
-	<target name="warnotavailable" unless="check.war">
-		<mkdir dir="${war.dir}" />
-	</target>
+	
 	
 	
 </project>

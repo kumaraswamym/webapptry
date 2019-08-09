@@ -10,6 +10,7 @@
       <td align=center>
         <img src="images/springsource.png">
       </td>
+      
       <td>
          <h1>WebApplication JSP Page</h1>
       </td>
